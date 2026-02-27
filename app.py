@@ -79,7 +79,7 @@ def create_colorful_pdf(data, filename="resume.pdf"):
         if bullet and content.strip():
             for item in content.split(","):
                 pdf.cell(5)
-                pdf.multi_cell(0, 7, f"• {item.strip()}")
+                pdf.multi_cell(0, 7, f"- {item.strip()}")
         else:
             pdf.multi_cell(0, 7, content)
 
